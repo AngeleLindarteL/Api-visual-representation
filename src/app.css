@@ -1,0 +1,96 @@
+body{padding: 50px; font-family: sans-serif; text-align: center;}
+
+.btn{ padding: 10px; outline: none; border: black 1px solid; font-weight: bold; text-transform: uppercase; border-radius: 10px; transition: .2s;}
+
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 60px;
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    transition: .2s;
+}
+
+.btn p{ margin: 5px; align-self: center;}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 14px 0px #4a8fd6cf;
+}
+
+.light{
+    background-color: #bbbb;
+    color: black;
+    transition: .5s;
+}
+
+.dark{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    transition: .5s;
+}
+
+.dark .btn{ background-color: white; color: black;}
+.light .btn{ color: white; background-color: black}
+
+.info-box{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info-box p:first-child{
+    padding: 5px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 0;
+    width: 50%;
+}
+
+.info-box p:last-child{
+    padding: 5px;
+    border-bottom: 1px solid white;
+    margin: 0;
+    width: 50%;
+}
+
+.dark .info-box{ 
+    background-color: white;
+    color: black;
+}
+
+.dark .info-box p{
+    border-color: black;
+}
+
+.light .info-box{ 
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.light #theme-logo{
+    filter: invert(1);
+    background: url(./img/sun.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dark #theme-logo{
+    filter: invert(0);
+    background: url(./img/moon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#theme-logo{
+    width: 20%;
+    height:80%;
+    margin: 2px;
+    justify-self: flex-end;
+}
